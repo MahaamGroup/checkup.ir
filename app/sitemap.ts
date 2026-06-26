@@ -1,0 +1,2 @@
+import type { MetadataRoute } from 'next';import { cases,insights,navigation } from '@/content/site';
+export default function sitemap():MetadataRoute.Sitemap{const base='https://checkup.ir';return [...navigation.map(n=>({url:base+n.href,lastModified:new Date()})),{url:base+'/privacy',lastModified:new Date()},{url:base+'/terms',lastModified:new Date()},{url:base+'/cookies',lastModified:new Date()},...insights.map(i=>({url:`${base}/insights/${i.slug}`,lastModified:new Date()})),...cases.map(c=>({url:`${base}/case-studies/${c.slug}`,lastModified:new Date()}))]}

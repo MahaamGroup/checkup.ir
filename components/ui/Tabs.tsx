@@ -1,0 +1,1 @@
+export function Tabs({items}:{items:string[]}){return <div className="flex flex-wrap gap-3">{items.map(item=><span className="rounded-full border border-border px-4 py-2 text-sm" key={item}>{item}</span>)}</div>}

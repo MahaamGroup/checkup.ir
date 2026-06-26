@@ -1,0 +1,1 @@
+export function ErrorState({title,description}:{title:string;description:string}){return <div className="rounded-2xl border border-danger p-6"><h3 className="font-black text-danger">{title}</h3><p className="mt-2 text-text-secondary">{description}</p></div>}

@@ -1,0 +1,1 @@
+export function LoadingState(){return <div className="animate-pulse rounded-2xl bg-surface-soft p-8"><div className="h-5 w-1/3 rounded bg-border"/><div className="mt-4 h-4 w-2/3 rounded bg-border"/></div>}

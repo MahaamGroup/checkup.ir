@@ -1,0 +1,2 @@
+import { cn } from '@/lib/utils';
+export function Badge({children,variant='neutral'}:{children:React.ReactNode;variant?:'primary'|'neutral'|'success'|'warning'|'outline'}){return <span className={cn('inline-flex rounded-full px-3 py-1 text-xs font-bold',variant==='primary'&&'bg-brand-soft text-primary',variant==='neutral'&&'bg-surface-soft text-text-secondary',variant==='success'&&'bg-brand-soft text-success',variant==='warning'&&'bg-amber-50 text-warning',variant==='outline'&&'border border-border text-text-secondary')}>{children}</span>}

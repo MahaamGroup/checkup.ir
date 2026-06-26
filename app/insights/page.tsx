@@ -1,0 +1,2 @@
+import { CardGridSection, CTASection, Hero } from '@/components/sections/Sections';import { insights } from '@/content/site';
+export default function Page(){return <><Hero content={{eyebrow:'بینش‌ها',title:'یادداشت‌هایی برای تصمیم‌گیران درمانی',subtitle:'محتوای آموزشی درباره مدیریت، رشد و تجربه خدمت در سازمان‌های درمانی خصوصی.'}}/><CardGridSection title="دسته‌بندی و مطالب" items={insights}/><CTASection/></>}

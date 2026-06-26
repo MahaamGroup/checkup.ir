@@ -1,0 +1,1 @@
+export function Textarea(props:React.TextareaHTMLAttributes<HTMLTextAreaElement>){return <textarea {...props} className={`focus-ring min-h-[140px] rounded-xl border border-border p-4 ${props.className??''}`} />}
