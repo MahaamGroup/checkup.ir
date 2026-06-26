@@ -1,0 +1,3 @@
+import { notFound } from 'next/navigation';import { CardGridSection, CTASection, Hero, ReadingSection } from '@/components/sections/Sections';import { insights } from '@/content/site';
+export function generateStaticParams(){return insights.map(i=>({slug:i.slug}))}
+export default async function Page({params}:{params:Promise<{slug:string}>}){const {slug}=await params;const item=insights.find(i=>i.slug===slug);if(!item)notFound();return <><Hero content={{variant:'compact',eyebrow:item.category,title:item.title,subtitle:item.description}}/><ReadingSection title={item.title}/><CardGridSection title="بینش‌های مرتبط" items={insights.filter(i=>i.slug!==slug).slice(0,2)}/><CTASection/></>}

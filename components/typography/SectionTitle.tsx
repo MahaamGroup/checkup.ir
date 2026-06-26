@@ -1,0 +1,2 @@
+import { cn } from '@/lib/utils';
+export function SectionTitle({eyebrow,title,description,center=false}:{eyebrow?:string;title:string;description?:string;center?:boolean}){return <div className={cn('mb-10 max-w-[820px]',center&&'mx-auto text-center')}><p className="mb-3 text-sm font-bold text-primary">{eyebrow}</p><h2 className="text-2xl font-black leading-tight text-text-primary md:text-4xl">{title}</h2>{description&&<p className="mt-5 max-w-[72ch] text-base leading-8 text-text-secondary md:text-lg">{description}</p>}</div>}
