@@ -1,0 +1,2 @@
+import { CompactHero } from '@/components/hero/Hero';import { CaseStudiesSection } from '@/components/sections/CaseStudiesSection';import { FrameworkSection } from '@/components/sections/FrameworkSection';import { CTASection } from '@/components/sections/CTASection';
+export default function Page(){return <><CompactHero title="جزئیات مطالعه موردی" subtitle="چالش، رویکرد و نتیجه."/><FrameworkSection/><CaseStudiesSection/><CTASection/></>}

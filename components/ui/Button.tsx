@@ -1,0 +1,3 @@
+import Link from 'next/link';
+type Props={children:React.ReactNode;href?:string;variant?:'primary'|'secondary'|'ghost';className?:string;type?:'button'|'submit'};
+export function Button({children,href,variant='primary',className='',type='button'}:Props){const v={primary:'bg-primary text-white hover:bg-primary-hover shadow-small',secondary:'border border-primary text-primary hover:bg-primary-soft',ghost:'text-primary hover:bg-primary-soft'}[variant];const cls=`focus-ring inline-flex h-12 items-center justify-center rounded-xl px-6 text-sm font-bold transition duration-200 hover:-translate-y-0.5 ${v} ${className}`;return href?<Link className={cls} href={href}>{children}</Link>:<button type={type} className={cls}>{children}</button>}
