@@ -1,0 +1,2 @@
+import { Container } from './Container';
+export function Section({children,tone='white',className='',id}:{children:React.ReactNode;tone?:'white'|'soft'|'tint'|'dark';className?:string;id?:string}){const tones={white:'bg-white',soft:'bg-surface-soft',tint:'bg-surface-tint',dark:'bg-[#132326] text-white'};return <section id={id} className={`${tones[tone]} py-[72px] md:py-24 lg:py-[120px] ${className}`}><Container>{children}</Container></section>}
