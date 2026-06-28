@@ -1,2 +1,16 @@
-@tailwind base;@tailwind components;@tailwind utilities;
-:root{--font-vazir:Vazirmatn}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#fff;color:#172426}a{text-decoration:none}::selection{background:#E7F3F4;color:#145C63}.soft-grid{background-image:linear-gradient(rgba(20,92,99,.06) 1px,transparent 1px),linear-gradient(90deg,rgba(20,92,99,.06) 1px,transparent 1px);background-size:40px 40px}.focus-ring:focus-visible{outline:3px solid rgba(20,92,99,.35);outline-offset:3px}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { --font-vazir: Vazirmatn; }
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; background: #fff; color: #172426; }
+a { text-decoration: none; }
+::selection { background: #E7F3F4; color: #145C63; }
+.soft-grid { background-image: linear-gradient(rgba(20,92,99,.06) 1px, transparent 1px), linear-gradient(90deg, rgba(20,92,99,.06) 1px, transparent 1px); background-size: 40px 40px; }
+.focus-ring:focus-visible { outline: 3px solid rgba(20,92,99,.35); outline-offset: 3px; }
+.hero-anchor { transform-origin: 55% 45%; }
+[data-intention] { position: relative; }
+[data-intention]::before { content: attr(data-intention); position: absolute; inset-inline-start: clamp(1rem, 4vw, 3rem); top: 1.25rem; color: rgba(20,92,99,.34); font-size: .72rem; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; }
+.bg-\[\#132326\][data-intention]::before { color: rgba(255,255,255,.38); }

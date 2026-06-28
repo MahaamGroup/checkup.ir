@@ -1,2 +1,2 @@
 import { Hero } from '@/components/hero/Hero';import { pageCopy } from '@/content/site';import { ValuesSection } from '@/components/sections/ValuesSection';import { PrinciplesSection } from '@/components/sections/PrinciplesSection';import { CTASection } from '@/components/sections/CTASection';
-export default function Page(){return <><Hero title={pageCopy.about[0]} subtitle={pageCopy.about[1]}/><ValuesSection/><PrinciplesSection/><CTASection/></>}
+export default function Page(){return <><Hero title={pageCopy.about[0]} subtitle={pageCopy.about[1]} tone="human"/><ValuesSection/><PrinciplesSection/><CTASection/></>}
